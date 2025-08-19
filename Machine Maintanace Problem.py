@@ -21,9 +21,9 @@ def min_days_to_produce_heap(machines, target):
 
 
 # Example usage:
-machines = [
-    (10, 6),
-    (5, 1)
-]
+n=int(input("Enter the number of machines: "))
+machines=[]
+for i in range(n):
+    machines.append(tuple(map(int,input().split())))
 target = 50
 print(min_days_to_produce_heap(machines, target))  # minimal days
