@@ -18,7 +18,7 @@ for i in range(n):
         else:
             from_top = dp[i-1][j] if i>0 else 0
             from_left = dp[i][j-1] if j>0 else 0
-            if i != 0 or j != 0:  # don't overwrite start cell
+            if i != 0 or j != 0:
                 dp[i][j] = from_top + from_left
 
 print("DP Table:")
