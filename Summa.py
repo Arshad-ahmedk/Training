@@ -1,5 +1,4 @@
-a="Hello World"
-flag=0
-for ch in a.lower():
-    if 'a'<=ch<='z':
-        flag|=1<<(ord(ch)-ord('a'))
+num=5
+boxes = [set() for _ in range(9)]
+boxes[(4 // 3) * 3 + 7 // 3].add(num)
+print(boxes)
