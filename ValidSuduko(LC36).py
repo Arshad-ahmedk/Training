@@ -5,6 +5,15 @@ def isValidSudoku(board):
     n = len(board)
     m = int(math.sqrt(n))
 
+    # def getfree(r, c, board):
+    #     for i in range(r):
+    #         for j in range(c):
+    #             if board[i][j] == ".":
+    #                 return [i, j]
+    #
+    # a=getfree(n,n,board)
+    # print(a)
+
     rows = [set() for _ in range(n)]
     cols = [set() for _ in range(n)]
     boxes = [set() for _ in range(n)]
