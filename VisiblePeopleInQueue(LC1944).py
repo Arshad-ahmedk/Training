@@ -19,7 +19,7 @@
 class Solution:
     def canSeePersonsCount(self, heights):
         n = len(heights)
-        res = [-1] * n
+        res = [0] * n
         stack = []
         for i in range(n - 1, -1, -1):
             count = 0
